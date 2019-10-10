@@ -5,15 +5,15 @@ This is created to help me and people learn how to code a single page that has s
 I uses Ajax, Javascript, Jquery, CSS and HTML to build.
 Please feel free to clone and help people to learn how to code.
 
-# Some pictures for different type of devices (Responsive)
+# Some screenshots for different type of devices (Responsive)
 
-[Website](picture/website.png)
+![Website](https://github.com/minmin227/tweeter/blob/master/picture/website.png)
 
-[tablet](picture/tablet-version.png)
+![tablet version](https://github.com/minmin227/tweeter/blob/master/picture/tablet-version.png)
 
-[ipad](picture/ipad-version.png)
+![ipad version](https://github.com/minmin227/tweeter/blob/master/picture/ipad-version.png)
 
-[mobile](picture/mobile-version.png)
+![mobile version](https://github.com/minmin227/tweeter/blob/master/picture/mobile-version.png)
 
 ## Getting Started
 
