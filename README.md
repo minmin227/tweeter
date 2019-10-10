@@ -7,13 +7,13 @@ Please feel free to clone and help people to learn how to code.
 
 # Some screenshots for different type of devices (Responsive)
 
-![Website](https://github.com/minmin227/tweeter/blob/master/picture/website.png)
+!["Website"](https://github.com/minmin227/tweeter/blob/master/picture/website.png)
 
-![tablet version](https://github.com/minmin227/tweeter/blob/master/picture/tablet-version.png)
+!["tablet version"](https://github.com/minmin227/tweeter/blob/master/picture/tablet-version.png)
 
-![ipad version](https://github.com/minmin227/tweeter/blob/master/picture/ipad-version.png)
+!["ipad version"](https://github.com/minmin227/tweeter/blob/master/picture/ipad-version.png)
 
-![mobile version](https://github.com/minmin227/tweeter/blob/master/picture/mobile-version.png)
+!["mobile version"](https://github.com/minmin227/tweeter/blob/master/picture/mobile-version.png)
 
 ## Getting Started
 
