@@ -35,7 +35,6 @@ article {
 article .headName {
   flex-basis: 50%;
   display: flex;
-  flex-wrap: wrap;
 }
 
 article .avaTar {
@@ -90,4 +89,18 @@ article:hover .userName {
 .iCon i:last-child:hover {
   color: orangered;
   transition-duration: 0.5s;
+}
+
+
+@media (max-width: 1024px) {
+  article:hover{
+    box-shadow: 3px 3px rgb(400, 180, 100);
+    transition-duration: 0.5s;
+    opacity: 0.8;
+  }
+
+  article:hover .avaTar {
+    border: 2px solid rgb(63, 84, 166, 0.5);
+    transition-duration: 0.5s;
+  }
 }

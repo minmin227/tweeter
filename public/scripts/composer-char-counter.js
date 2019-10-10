@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".counter").text(charNum);
     if (charNum < 0) {
       $(".counter").css("color", "red");
-      alert('too long to handle');
+      alert('Over character limit')
     } else if (charNum === 140) {
       $(".counter").css("color", "rgb(113, 112, 109)");
     } else {
@@ -22,14 +22,10 @@ $(document).ready(function () {
 
 $(document).ready(() => {
   $('input').mouseover(function () {
-    $('input').css("background", "white")
-    $('input').css("color", "rgb(63, 84, 166)")
-    $('input').css("transition-duration", "0.5s")
+    $('input').css("background", "white").css("color", "rgb(63, 84, 166)").css("transition-duration", "0.5s")
   })
   $('input').mouseleave(function () {
-    $('input').css("color", "white")
-    $('input').css("background", "rgb(63, 84, 166)")
-    $('input').css("transition-duration", "0.5s")
+    $('input').css("color", "white").css("background", "rgb(63, 84, 166)").css("transition-duration", "0.5s")
   })
 })
 
@@ -45,30 +41,26 @@ $(() => {
 })
 
 $(document).ready(() => {
-  $('header').click(() => {
-    $('html, body').animate({ scrollTop: $('.userName').offset().top }, 500)
-  })
-})
-
-$(document).ready(() => {
   if ($('form'))
     $('#arrow').click(() => {
       $('form').slideToggle("slow");
+      $('textarea').focus();
     })
 })
 
 $(document).ready(() => {
   $("#upArrow").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
+    $("body").animate({ scrollTop: 0 }, 500);
     if ($('form').hide()) {
-      return $('form').show(1500)
+      $('form').show(1500);
+      $('textarea').focus();
     }
   });
 })
 
 $(document).scroll(function () {
   var y = $(this).scrollTop();
-  if (y > 400) {
+  if (y > 200) {
     $('#upArrow').fadeIn();
   } else {
     $('#upArrow').fadeOut();
@@ -77,20 +69,12 @@ $(document).scroll(function () {
 
 $(document).scroll(function () {
   var y = $(this).scrollTop();
-  if (y < 400) {
-    $('nav').fadeIn();
+  if (y < 200) {
+    $('nav').fadeIn()
   } else {
-    $('nav').fadeOut();
+    $('nav').fadeOut()
   }
 });
-
-$(document).ready(() => {
-  $("form").hide()
-}) //hidden the form at the begin
-
-$(document).ready(() => {
-  $("#upArrow").hide()
-}) //hidden the form at the begin
 
 
 

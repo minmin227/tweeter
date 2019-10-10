@@ -74,6 +74,7 @@ nav #arrow {
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
+  display: none;
 }
 
 .new-tweet textarea {
@@ -134,4 +135,5 @@ nav #arrow {
   color: green;
   font-weight: 500;
 }
+
 

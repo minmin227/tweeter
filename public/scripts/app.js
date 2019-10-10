@@ -1,4 +1,4 @@
-const escape =  function(str) {
+const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -21,12 +21,12 @@ const elapseTime = function (data) {
   } else if (seconds > 60 * 60) {
     time = Math.floor(seconds / 60 / 60);
     return `${time} hour${time > 1 ? 's' : ''} ago`;
-  } else if (seconds > 60 ) {
+  } else if (seconds > 60) {
     time = Math.floor(seconds / 60);
     return `${time} minute${time > 1 ? 's' : ''} ago`;
   } else if (seconds < 60) {
     time = Math.floor(seconds);
-    return `${time >= 1 ? time : 1 } second${time > 1 ? 's' : ''} ago`;
+    return `${time >= 1 ? time : 1} second${time > 1 ? 's' : ''} ago`;
   }
 }
 
@@ -114,35 +114,37 @@ $(document).ready(() => {
       })
   }
 
-$('.validationMes').hide();
+  $('.validationMes').hide();
 
   $("form").submit((e) => {
     e.preventDefault();
     if (!$("textarea").val().length) {
       $('.validationMes').text("Please fill your tweet !!!").css("color", "red").slideDown().fadeOut(2000)
+    } else if ($("textarea").val().length > 140){
+      $('.validationMes').text("Your tweet is too long").css("color", "red").slideDown().fadeOut(2000)
     } else {
       $.ajax({
         type: "POST",
         url: "/tweets",
         data: $("form").serialize()
       })
-      .then(() => {
-        loadTweets();
-        $('.validationMes').text("Your tweet is posted").css("color", "green").slideDown().fadeOut(3000);
-        $("textarea").val("");
-        $(".counter").text(140).css("color", "rgb(113, 112, 109)");
-      })
+        .then(() => {
+          loadTweets();
+          $('.validationMes').text("Your tweet is posted").css("color", "green").slideDown().fadeOut(3000);
+          $("textarea").val("");
+          $(".counter").text(140).css("color", "rgb(113, 112, 109)");
+        })
     }
   })
-
-
-
 
   loadTweets();
 
 })
 
 
+$(document).ready(() => {
+  $("#upArrow").hide()
+}) //hidden the form at the begin
 
 
 
