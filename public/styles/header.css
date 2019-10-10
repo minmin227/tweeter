@@ -1,7 +1,5 @@
 header{
   height: 80vh;
-  width: 100%;
-  position: relative;
   background-color: #fa9600;
   background-image: url(http://www.transparenttextures.com/patterns/elegant-grid.png);
 }
@@ -11,6 +9,7 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
 }
 
 .header-Image {
@@ -34,6 +33,8 @@ main {
   margin: auto;
 }
 
+
+
 @media (max-width: 1300px) {
   body{
     display: flex;
@@ -41,7 +42,18 @@ main {
     justify-content: space-between;
     transition-duration: 0.5s ease-out;
   }
+  
 
+  .container {
+    margin-top: 10rem;
+    flex-basis: 60%;
+    transition: .5s linear;
+    padding: 1rem;
+  }
+  
+  .container form {
+    display: unset;
+  }
   header{
     height: 5rem;
     width: 5rem;
@@ -70,19 +82,8 @@ main {
   nav {
     flex-basis: 100%;
   }
-
-  main {
-    margin-top: 10rem;
-    flex-basis: 60%;
-    transition: .5s linear;
-  }
-
-  .container {
-    padding-right: 2rem;
-  }
-
+  
 }
-
 
 @media (max-width: 1024px) {
   article:hover{
@@ -204,10 +205,3 @@ main {
   }
 }
 
-@media (max-width: 400px) {
-  nav {
-    display: unset;
-    text-align: center;
-    width: 100vw;
-  }
-}

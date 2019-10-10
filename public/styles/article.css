@@ -96,7 +96,7 @@ article:hover .userName {
   article:hover{
     box-shadow: 3px 3px rgb(400, 180, 100);
     transition-duration: 0.5s;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   article:hover .avaTar {

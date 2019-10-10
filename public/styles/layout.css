@@ -69,45 +69,43 @@ nav #arrow {
 }
 
 .new-tweet form {
+  width: 90%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
   display: none;
 }
 
+form .counter {
+  font-family: 'Bungee', cursive, sans-serif;
+  float: right;
+}
+
 .new-tweet textarea {
-  width: 100%;
-  height: 35px;
+  width: 95%;
+  height: 3rem;
   border: none;
   border-bottom: 3px solid rgb(113, 112, 109);
   background: rgb(244, 241, 235);
   font-weight: 600;
-  flex: 100%;
+  flex-basis: 100%;
   margin-top: 2rem;
   color: rgb(113, 112, 109);
   resize: none;
 }
 
+
 .new-tweet input {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   border: 1px solid rgb(63, 84, 166);
   background: rgb(63, 84, 166);
   color: white;
   padding: 5px 10px 5px 10px;
   font-family: 'Bungee', cursive, sans-serif;
-  flex-basis: 5%;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 3px 3px rgb(113, 112, 109)
-}
-
-
-.new-tweet .counter {
-  font-family: 'Bungee', cursive, sans-serif;
-  flex-basis: 5%;
-  margin-top: 20px;
+  box-shadow: 3px 3px rgb(113, 112, 109);
 }
 
 #upArrow {
@@ -136,4 +134,13 @@ nav #arrow {
   font-weight: 500;
 }
 
+@media(max-width: 400px) {
+  nav{
+    display: unset;
+    text-align: center;
+  }
+  #arrow {
+    display: unset;
+  }
+}
 
